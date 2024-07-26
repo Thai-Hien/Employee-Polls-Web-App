@@ -2,15 +2,17 @@
 
 exports[`Leaderboard Component Tests matches the snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="MuiBox-root css-fs5lrh"
+  >
     <h1
-      class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter MuiTypography-gutterBottom css-1le49ku-MuiTypography-root"
       data-testid="heading"
     >
       Leaderboard
     </h1>
     <div
-      class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1jjjk15-MuiPaper-root-MuiTableContainer-root"
     >
       <table
         class="MuiTable-root css-rqglhn-MuiTable-root"
@@ -22,19 +24,19 @@ exports[`Leaderboard Component Tests matches the snapshot 1`] = `
             class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               User
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               isAnswered
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               Created
@@ -45,39 +47,77 @@ exports[`Leaderboard Component Tests matches the snapshot 1`] = `
           class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
             >
-              User Alpha
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1vdfstc-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+                  data-testid="PersonIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                User Alpha
+              </p>
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               2
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
             >
-              User Beta
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1vdfstc-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+                  data-testid="PersonIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                User Beta
+              </p>
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               1
             </td>
@@ -91,15 +131,17 @@ exports[`Leaderboard Component Tests matches the snapshot 1`] = `
 
 exports[`Leaderboard Component Tests matches the updated snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="MuiBox-root css-fs5lrh"
+  >
     <h1
-      class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter MuiTypography-gutterBottom css-1le49ku-MuiTypography-root"
       data-testid="heading"
     >
       Leaderboard
     </h1>
     <div
-      class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1jjjk15-MuiPaper-root-MuiTableContainer-root"
     >
       <table
         class="MuiTable-root css-rqglhn-MuiTable-root"
@@ -111,19 +153,19 @@ exports[`Leaderboard Component Tests matches the updated snapshot 1`] = `
             class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               User
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               isAnswered
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               Created
@@ -134,39 +176,77 @@ exports[`Leaderboard Component Tests matches the updated snapshot 1`] = `
           class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
             >
-              User Alpha
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1vdfstc-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+                  data-testid="PersonIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                User Alpha
+              </p>
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               2
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
             >
-              User Beta
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1vdfstc-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+                  data-testid="PersonIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                User Beta
+              </p>
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               1
             </td>
@@ -178,17 +258,19 @@ exports[`Leaderboard Component Tests matches the updated snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Leaderboard Component should match snapshot 1`] = `
+exports[`Leaderboard Component Tests should match the rendered leaderboard component with the stored snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="MuiBox-root css-fs5lrh"
+  >
     <h1
-      class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter MuiTypography-gutterBottom css-1le49ku-MuiTypography-root"
       data-testid="heading"
     >
       Leaderboard
     </h1>
     <div
-      class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1jjjk15-MuiPaper-root-MuiTableContainer-root"
     >
       <table
         class="MuiTable-root css-rqglhn-MuiTable-root"
@@ -200,19 +282,19 @@ exports[`Leaderboard Component should match snapshot 1`] = `
             class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               User
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               isAnswered
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               Created
@@ -223,39 +305,77 @@ exports[`Leaderboard Component should match snapshot 1`] = `
           class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
             >
-              User One
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1vdfstc-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+                  data-testid="PersonIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                User Alpha
+              </p>
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               2
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
             >
-              User Two
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1vdfstc-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+                  data-testid="PersonIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                User Beta
+              </p>
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               1
             </td>
@@ -267,17 +387,19 @@ exports[`Leaderboard Component should match snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Leaderboard Component should match snapshot 2`] = `
+exports[`Leaderboard Component Tests should match the updated snapshot of the leaderboard component 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="MuiBox-root css-fs5lrh"
+  >
     <h1
-      class="MuiTypography-root MuiTypography-h1 css-o2w69a-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-alignCenter MuiTypography-gutterBottom css-1le49ku-MuiTypography-root"
       data-testid="heading"
     >
       Leaderboard
     </h1>
     <div
-      class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1jjjk15-MuiPaper-root-MuiTableContainer-root"
     >
       <table
         class="MuiTable-root css-rqglhn-MuiTable-root"
@@ -289,19 +411,19 @@ exports[`Leaderboard Component should match snapshot 2`] = `
             class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               User
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               isAnswered
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium css-imwse7-MuiTableCell-root"
               scope="col"
             >
               Created
@@ -312,39 +434,77 @@ exports[`Leaderboard Component should match snapshot 2`] = `
           class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
             >
-              User One
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1vdfstc-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+                  data-testid="PersonIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                User Alpha
+              </p>
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               2
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
           >
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
             >
-              User Two
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1vdfstc-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiAvatar-fallback css-10mi8st-MuiSvgIcon-root-MuiAvatar-fallback"
+                  data-testid="PersonIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                User Beta
+              </p>
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-m944wd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1yhpg23-MuiTableCell-root"
             >
               1
             </td>
