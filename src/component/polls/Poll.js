@@ -1,37 +1,19 @@
 import { Avatar, Box, Button, Grid, Typography } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { handleAddAnswer } from "../../actions/allQuestions";
-import { handleLogout } from "../../actions/authUser"; // Action to log out the user
 
 export const Poll = () => {
-  const { id } = useParams();
+  const id = useParams().id;
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-
   const authUser = useSelector((state) => state.authUser);
   const allQuestions = useSelector((state) => state.allQuestions);
   const allUsers = useSelector((state) => state.allUsers);
-
   const question = Object.values(allQuestions).find(
     (question) => question.id === id
   );
-
-  useEffect(() => {
-    if (!question) {
-      if (authUser) {
-        dispatch(handleLogout());
-        navigate("/login?redirect=404");
-      } else {
-        navigate("/404");
-      }
-    }
-  }, [question, authUser, dispatch, navigate]);
-
-  if (!question) {
-    return null;
-  }
+  const navigate = useNavigate();
 
   const author = Object.values(allUsers).find(
     (user) => user.id === question.author
