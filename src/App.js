@@ -23,16 +23,35 @@ function App() {
       <Routes>
         <Route path={_path.LogInUrl} exact element={<Login />} />
         <Route
+          path={_path.LeaderBoardUrl}
+          element={
+            <AuthGuard>
+              <Leaderboard />
+            </AuthGuard>
+          }
+        />
+        <Route
           path="/"
           element={
             <AuthGuard>
               <Dashboard />
             </AuthGuard>
+          } />
+        <Route
+          path={_path.QuestionUrl}
+          element={
+            <AuthGuard>
+              <Poll />
+            </AuthGuard>
+          } />
+        <Route
+          path={_path.NewQuestionUrl}
+          element={
+            <AuthGuard>
+              <NewPoll />
+            </AuthGuard>
           }
         />
-        <Route path={_path.LeaderBoardUrl} element={<Leaderboard />} />
-        <Route path={_path.QuestionUrl} element={<Poll />} />
-        <Route path={_path.NewQuestionUrl} element={<NewPoll />} />
         <Route path={_path.SignOutUrl} element={<Logout />} />
       </Routes>
     </div>

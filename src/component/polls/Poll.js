@@ -1,10 +1,11 @@
 import { Avatar, Box, Button, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { handleAddAnswer } from "../../actions/allQuestions";
 
 export const Poll = () => {
+
   const id = useParams().id;
   const dispatch = useDispatch();
   const authUser = useSelector((state) => state.authUser);
@@ -13,6 +14,7 @@ export const Poll = () => {
   const question = Object.values(allQuestions).find(
     (question) => question.id === id
   );
+
   const navigate = useNavigate();
 
   const author = Object.values(allUsers).find(
