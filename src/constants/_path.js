@@ -6,4 +6,5 @@ export const _path = {
   NewQuestionUrl: "/addQuestion",
   QuestionUrl: "/allQuestions/:id",
   OtherUrl: "/*",
+  NotFoundUrl: "/notFound",
 };

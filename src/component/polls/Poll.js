@@ -1,7 +1,7 @@
 import { Avatar, Box, Button, Grid, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { handleAddAnswer } from "../../actions/allQuestions";
 
 export const Poll = () => {
@@ -16,10 +16,20 @@ export const Poll = () => {
   );
 
   const navigate = useNavigate();
-
   const author = Object.values(allUsers).find(
     (user) => user.id === question.author
   );
+
+  useEffect(() => {
+    if (!question || !author) {
+      navigate("/NotFound");
+    }
+  }, [question, author, navigate]);
+
+  if (!question || !author) {
+    return null;
+  }
+
 
   const hasVotedForOptionOne = question.optionOne.votes.includes(authUser.id);
   const hasVotedForOptionTwo = question.optionTwo.votes.includes(authUser.id);
