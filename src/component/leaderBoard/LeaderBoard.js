@@ -23,7 +23,7 @@ const Leaderboard = () => {
     isAnswered: Object.keys(user.answers || {}).length,
     created: (user.allQuestions || []).length,
   }));
-
+  rows.sort((a, b) => (b.isAnswered + b.created) - (a.isAnswered + a.created));
   return (
     <Box sx={{ mt: 4, mx: "auto", maxWidth: 800 }}>
       <Typography variant="h3" component="h1" data-testid="heading" gutterBottom align="center">

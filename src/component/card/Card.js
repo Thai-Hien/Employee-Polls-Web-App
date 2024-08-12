@@ -34,14 +34,15 @@ export const Card = ({ question, author }) => {
         </Typography>
         <Typography
           variant="body2"
-          italic
           component="p"
           className="text-xs italic"
         >
           {formattedDate}
         </Typography>
         <Link to={`allQuestions/${question.id}`}>
-          <Button variant="text">Show</Button>
+          <Button variant="text">
+            Show
+          </Button>
         </Link>
       </Box>
     </Box>

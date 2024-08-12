@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Divider } from "@mui/material";
 import { Card } from "../card/Card";
 
 export const Dashboard = () => {
@@ -7,8 +7,9 @@ export const Dashboard = () => {
   const allQuestions = useSelector((state) => state.allQuestions);
   const allUsers = useSelector((state) => state.allUsers);
 
-  const isUnisAnswered = (question) => {
-    return !question.optionOne.votes?.includes(loggedInUser.id);
+  const isUnAnswered = (question) => {
+    return !question.optionOne.votes?.includes(loggedInUser.id) &&
+      !question.optionTwo.votes?.includes(loggedInUser.id);
   };
 
   const isAnswered = (question) => {
@@ -25,13 +26,14 @@ export const Dashboard = () => {
           <Typography variant="h4" component="h4">
             New allQuestions
           </Typography>
+          <Divider sx={{ my: 3, borderBottomWidth: 3, borderColor: 'primary.main' }} /> {/* Enhanced Divider */}
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             {Object.values(allQuestions)
-              .filter((question) => question && isUnisAnswered(question))
+              .filter((question) => question && isUnAnswered(question))
               .map((question) => (
                 <Grid item xs={2} sm={4} md={4} key={question.id}>
                   <Card
@@ -44,9 +46,14 @@ export const Dashboard = () => {
         </Grid>
 
         <Grid item xs={12}>
+          <Divider sx={{ my: 4, borderBottomWidth: 3, borderColor: 'primary.main' }} /> {/* Enhanced Divider */}
+        </Grid>
+
+        <Grid item xs={12}>
           <Typography variant="h4" component="h4">
             isAnswered allQuestions
           </Typography>
+          <Divider sx={{ my: 3, borderBottomWidth: 3, borderColor: 'primary.main' }} /> {/* Enhanced Divider */}
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}

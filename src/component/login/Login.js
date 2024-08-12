@@ -11,6 +11,7 @@ export const Login = () => {
   if (isAuthenticated) {
     const urlParams = new URLSearchParams(window.location.search);
     const redirectUrl = urlParams.get("redirectTo");
+    localStorage.setItem('login', isAuthenticated);
     return <Navigate to={redirectUrl || "/"} />;
   }
 

@@ -11,6 +11,7 @@ export const Logout = () => {
   useEffect(() => {
     const logoutAndRedirect = async () => {
       await dispatch(handleLogout());
+      localStorage.setItem("login", false);
       navigate(_path.LogInUrl);
     };
 

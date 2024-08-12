@@ -1,10 +1,65 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import { Provider } from "react-redux";
 import configureStore from "redux-mock-store";
 import Leaderboard from "./LeaderBoard";
 import { act } from "react";
+import { saveQuestion, saveQuestionAnswer } from "../../service/api";
+import { _saveQuestion, _saveQuestionAnswer } from "../../utils/Data";
+import ButtonComponent from './buttonTest';
+
+describe('ButtonComponent Tests', () => {
+  it('should change text when button is clicked', () => {
+    const { getByText } = render(<ButtonComponent />);
+
+    expect(getByText('Initial Text')).toBeInTheDocument();
+
+    fireEvent.click(getByText('Click me'));
+
+    expect(getByText('Text After Click')).toBeInTheDocument();
+  });
+});
+
+jest.mock("../../utils/Data", () => ({
+  _saveQuestion: jest.fn(),
+  _saveQuestionAnswer: jest.fn(),
+}));
+
+describe('Function Tests', () => {
+  describe('saveQuestion', () => {
+    it('should call _saveQuestion with correct arguments', () => {
+      const optionOneText = 'Option One';
+      const optionTwoText = 'Option Two';
+      const author = 'Author';
+
+      saveQuestion(optionOneText, optionTwoText, author);
+
+      expect(_saveQuestion).toHaveBeenCalledWith({
+        optionOneText,
+        optionTwoText,
+        author,
+      });
+    });
+  });
+
+  describe('saveQuestionAnswer', () => {
+    it('should call _saveQuestionAnswer with correct arguments', () => {
+      const authedUserId = 'user1';
+      const qid = 'question1';
+      const answer = 'optionOne';
+
+      saveQuestionAnswer(authedUserId, qid, answer);
+
+      expect(_saveQuestionAnswer).toHaveBeenCalledWith({
+        authedUser: authedUserId,
+        qid,
+        answer,
+      });
+    });
+  });
+});
+
 
 const createMockStore = configureStore([]);
 

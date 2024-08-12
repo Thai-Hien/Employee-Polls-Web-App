@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { handleLogin } from "../../actions/authUser";
 
 export const LoginForm = () => {
-  const [selectedUser, setSelectedUser] = useState("sarahedo");
+  const [selectedUser, setSelectedUser] = useState("");
   const [password, setPassword] = useState("pass1");
   const dispatch = useDispatch();
   const userList = useSelector((state) => state.allUsers);
