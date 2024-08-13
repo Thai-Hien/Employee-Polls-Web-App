@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { handleInitialData } from "./actions/shareQ";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Login } from "./component/login/Login";
 import { _path } from "./constants/_path";
 import { Route, Routes } from "react-router-dom";
@@ -13,7 +13,7 @@ import { Poll } from "./component/polls/Poll";
 import { NewPoll } from "./component/newpoll/NewPoll";
 import { NotFound } from "./component/polls/NotFound";
 function App() {
-  const isLoggin = localStorage.getItem("login");
+  const isLoggin = useSelector((state) => Boolean(state.authUser));
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -43,7 +43,7 @@ function App() {
         <Route
           path={_path.QuestionUrl}
           element={
-            <Poll />
+            <AuthGuard><Poll /></AuthGuard>
           } />
         <Route
           path={_path.NewQuestionUrl}
@@ -53,7 +53,7 @@ function App() {
             </AuthGuard>
           }
         />
-        <Route path={_path.NotFoundUrl} element={<NotFound />} />
+        <Route path={_path.NotFoundUrl} element={<AuthGuard><NotFound /></AuthGuard>} />
         <Route path={_path.SignOutUrl} element={<Logout />} />
       </Routes>
     </div>
